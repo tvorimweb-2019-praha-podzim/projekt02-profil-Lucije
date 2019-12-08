@@ -1,8 +1,17 @@
 /* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
 
-*{margin:0;padding:0;}
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
 
 /*
  BARVY
@@ -13,51 +22,57 @@ html { box-sizing: border-box; }
  portfolio  #e74c3c
  facebook   #3b5998
  twitter    #1da1f2
+
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <style>
+            a:link    {color: white}
+            a:visited    {color: white}
+            a:active    {color: white}
+            a:link, a:visited    {text-decoration: none}
+            .facebook a:hover {padding: 0px 0px 0px 0px; background-color: #3b5998;}
+            .twitter a:hover {padding: 0px 0px 0px 0px; background-color:#1da1f2;}
+            .portfolio a:hover {padding: 15px 54px 12px 53px; background-color:#e74c3c;}
+            </style>
+
 */
 
-
-.body{
-}
-
 .profil {
-   width: 250px;
-   box-shadow: 0px 3px 5px black;
+    width: 250px;
+    box-shadow: 0px 3px 5px black;
+    background-color: #31363b;
+    font-family: 'Montserrat', sans-serif;
 }
-
 
 .hlavicka {
-   
     box-shadow: 0px 3px 3px darkgray;
     background-color: #31363b;
-    
-    
 }
 
 .foto {
-
     width: 250px;
 }
 
 .logo {
-
-    background-color:#b92e81;
+    background-color: #b92e81;
     border-radius: 100%;
     box-shadow: 0px 3px 3px black;
-    position: absolute; top: 140px; left: 170px;;
+    position: absolute;
+    top: 140px;
+    left: 170px;
+    ;
 }
-    
-.obsah {
 
+.obsah {
     width: 250px;
-    background-color:#31363b ;
-    color: azure;
+    background-color: #31363b;
+    color: grey;
     padding: 30px;
     font-size: 15px;
     font-family: 'Source Sans Pro', sans-serif;
-    }
+}
 
 .jmeno {
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
     font-size: 25px;
     padding-bottom: 15px;
     color: azure;
@@ -65,71 +80,55 @@ html { box-sizing: border-box; }
 
 .p {
     font-family: 'Source Sans Pro', sans-serif;
-    padding: 20px;
+    padding: 18px;
 }
 
-.text {
-    padding-bottom: 10px;
-}
 
 .odkazy {
-    color: antiquewhite;
-    background-color:  #31363b;
-        font-family: 'Montserrat', sans-serif;
-    display: inline-block;
-        
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    overflow: hidden;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+}
+
+.odkazy li {
+    list-style-type: none;
+}
+
+.odkazy li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+
 }
 
 .portfolio {
-    background-color:#31363b ;
-       font-size: 15px;
-    color:antiquewhite;
-     width: 250px;
-    height: 50px;
-    text-align: center;
-    padding-top: 15px;
-    border-width: 2px; 
-    border-color: #3f464d; 
-    border-style: solid;
+    border-bottom: 1px solid #3f464d;
+    border-top: 1px solid #3f464d;
 }
 
 .facebook {
-    background-color: #31363b ;
-                text-align: left;
-    display: inline;
-    padding-right: 9px;;
-    padding-left: 24px ;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-width: 1px;
-    border-color: #3f464d;
-    border-style: solid;
-    
-   
-   
-    
+    width: 50%;
+    float: left;
+    border-right: 1px solid #3f464d;
 }
 
-.twitter{
-    background-color: #31363b  ;
-    display: inline;
-    padding-left: 25px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 16px;
-    border-width: 1px;
-    border-color: #3f464d;
-    border-style: solid;
-    
-    
+.twitter {
+    width: 50%;
+    float: right;
+}
 
-    }
+.facebook a:hover {
+    background-color: #3b5998;
+}
 
-.oba {
-background-color:#31363b ;
-width: 250px;
-height: 40px;
-border-top-width: 0px;
-text-align: center;
-padding-top: 10px;
+.twitter a:hover {
+    background-color: #1da1f2;
+}
+
+.portfolio a:hover {
+    background-color: #e74c3c;
 }
